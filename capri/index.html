@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/</title>
+    <link rel="stylesheet" href="css/capri.css">
+    <link rel="icon" href="images/icon.ico" sizes="16x16" type="image/x-icon">
+
+</head>
+<body>
+
+     .credit
+      {
+       position: fixed;
+       bottom: 0;
+       left: 0;
+       background-color: rgba(0,0,0,1);
+       color: #fff;
+       padding: 10px;
+       font-size: 12px;
+       z-index: 1000;
+       trasnform: translate(-50%, -5);
+      }
+
+
+    <div id="background-layer">
+        <video autoplay muted loop id="background-video">
+            <source src="videos/wg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="content">
+        <div id="blur-wrapper">
+            <img src="images/fumo.png" alt="Profile Photo" class="profile-photo">
+            <h1 id="name">C</h1>
+        </div>
+        <div id="message" class="message">Click To Enter</div>
+        
+        <audio loop id="audioPlayer">
+            <source src="audio/tib.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>                
+        <div id="links-wrapper">
+            <div id="links" class="links">
+                <a href="https://discord.gg/hVJ5WwR3FQ" class="link">
+                    <img src="images/FumoLogo.png" alt="FumoLogo" class="link-image">
+                </a>                
+            </div>
+        </div>
+    </div>
+<div id="credit">
+             Made by: <a href="https://fumo.wtf/" target="_blank">Fumo.wtf</a>
+          </div>
+
+    <script src="scripts/namescript.js"></script>
+    <script src="scripts/playbutton.js"></script>
+    <script src="scripts/title.js"></script>
+</body>
+</html>
