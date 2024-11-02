@@ -5,36 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Take a Krill Pill!</title>
     <link rel="stylesheet" href="app.css">
-    <link rel="icon" href="https://krill.gay/images/krill.ico" sizes="16x16" type="image/x-icon">
 
-    <meta property="og:title" content="Capri loves you<3">
-    <meta property="og:description" content="discord.gg/krill on top!">
-    <meta property="og:image" content="https://krill.gay/images/krill.ico">
-    <meta property="og:url" content="https://krill.gay">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="krill.gay">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const title = "Take a Krill Pill!";
+            const speed = 150;
+
+            function moveTitle() {
+                let index = 0;
+                function updateTitle() {
+                    document.title = title.substring(index) + title.substring(0, index);
+                    index = (index + 1) % title.length;
+                }
+                setInterval(updateTitle, speed);
+            }
+
+            moveTitle();
+        });
+    </script>
+
+    <style>
+        body {
+            background-color: #000000;
+            color: #5e06e2a4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 20px;
+        }
+        a {
+            color: #9109ec;
+        }
+       .white
+        {
+            color: #FFFFFF
+        }
+        .red {
+          color: #C41E3A;
+           }
+    </style>
 </head>
 <body>
-    <main>
     <h1>/Krill</h1>
 
-    <img id="mario" src="https://krill.gay/images/mario.gif" alt="He spinnnnnnnnn" width="60" title="Mario?">
-    <audio id="marioSound" src="audio/annihilation.mp3"></audio>
+    <img id="Welcome" src="images/welcome.png" alt="HIIIIIIIIIIIII" width="400" height="300" title="RIP Chilliman :(">
+        <source src="mario.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
 
-
-    <p class="white">Join Our Guild: <a href="https://discord.gg/krill" target="_blank" title="Join plz :3">Discord</a></p>
-    <p class="red">WARNING!!</p>
-    <p class="white">This site is a rip-off of FUMO (oh shit I foror the X): <a href="https://discord.gg/fumox" target="_blank" title="Show him some love">FUMO X!!</a></p>
+        <div class="white">
+            <p>Join Our Guild: <a href="https://discord.gg/krill" target="_blank" title="Join plz :3">Discord</a></p>
+          </div>
+       <div class="red">    
+<p>WARNING!! This site is a rip-off of FUMO (oh shit I foror the X): <a href="https://discord.gg/fumox" target="_blank" title="Show him some love">FUMO X!!</a></p>
+       </div>
 
         <h2>List of Users</h2>
         <div class="white">
             <p>Cͨhͪoͦoͦgeͤrͬ: <a href="https://krill.gay/chooger" target="_blank" title="The best page">Chooger</a></p>
-            <p>Carpi: <a href="https://krill.gay/capri" target="_blank" title="Big Papi Fumo <3">Capri</a></p>
-            <p>Puddles: <a href="https://krill.gay/puddles" target="_blank" title="The best page">Puddles</a></p>
+             <p>Carpi: <a href="https://krill.gay/capri" target="_blank" title="Big Papi Fumo <3">Capri</a></p>
+             <p>Puddles: <a href="https://krill.gay/puddles" target="_blank" title="The best page">Puddles</a></p>
+
         </div>
-    </main>
-    <script src="scripts/title.js"></script>
-    <script src="scripts/name.js"></script>
-    <script src="scripts/mario.js"></script>
 </body>
 </html>
+
